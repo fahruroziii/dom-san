@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #5CCEFF;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.login-box{
+    margin-top: 100px;
+    flex-basis: 350px;
+    background: #fff;
+    padding: 70px;
+}
+.login-box img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.login-box h2{
+    font-size: 20px;
+}
