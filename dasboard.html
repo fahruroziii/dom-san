@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin DOM-SAN</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #5CCEFF;
+            color: #000;
+            text-align: center;
+        }
+
+        .header {
+            margin-top: 20px;
+        }
+
+        .logo {
+            width: 180px;
+        }
+
+        .title {
+            margin-top: 10px;
+            margin-bottom: 55px;
+            font-size: 20px;
+            font-weight: semi-bold;
+            font-style: italic;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card .count {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #fff;
+            color: black;
+            text-decoration: none;
+            border: 1px solid black;
+            border-radius: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: #5CCEFF;
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .footer img {
+            width: 100px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo/dom-san.png" alt="Logo DOM-SAN" class="logo">
+        <h1 class="title">SELAMAT DATANG DI DASHBOARD ADMIN, SILAHKAN AKSES FITUR YANG TELAH TERSEDIA</h1>
+    </header>
+    <section class="dashboard">
+        <div class="card">
+            <h3>JUMLAH NASABAH</h3>
+            <div class="count">20</div>
+        </div>
+        <div class="card">
+            <h3>DATA SISWA SMK</h3>
+            <a href="#">CLICK NOW</a>
+        </div>
+        <div class="card">
+            <h3>JUMLAH PENABUNG</h3>
+            <div class="count">15</div>
+        </div>
+        <div class="card">
+            <h3>PANDUAN APLIKASI DOM-SAN</h3>
+            <a href="#">CLICK NOW</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="bmd-syariah-logo.png" alt="Logo BMD Syariah">
+        <img src="bsi-logo.png" alt="Logo Bank Syariah Indonesia">
+    </footer>
+</body>
+</html>
