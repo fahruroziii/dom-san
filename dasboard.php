@@ -74,7 +74,7 @@
 
         .card a {
             display: inline-block;
-            padding: 10px 15px;            
+            padding: 7px 15px;            
             color: black;
             text-decoration: none;
             border: 3px solid black;
